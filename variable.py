@@ -80,3 +80,20 @@ myString = "hello world"
 myString2 = f"hello {myString}"
 print (myString2) #hello hello world
 
+#Assignments can be done on more than one variable "simultaneously" on the same line like this
+
+x ,y ,z = 1 ,2 , 3
+
+print(x  , y , z)  
+#The above line is equivalent to:
+x = 1
+y = 2
+z = 3
+
+#Mixing operators between numbers and strings is not supported:
+one  =  1
+two  =  2
+hello =  "hello"
+
+print(one + two + hello)
+
