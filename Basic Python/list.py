@@ -11,4 +11,17 @@ for x in myList:
 
 #Accessing an index which does not exist generates an exception (an error).
 myList1 = [1 , 3 , 5]
-myList1[4]
+myList1.append ([5,6,7,8])
+print(myList1)
+
+
+a = [1, 2, 3, 4, 5] 
+b = a  #1,2,3,4,5
+b[0] = 0; #0,2,3,4,5
+
+print(a)  #0,2,3,4,5
+
+a = [1998, 2002] 
+b = [2014, 2016] 
+
+print ((a + b)*2) # 1998,2002,2014,2016,1998,2002,2014,2016
