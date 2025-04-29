@@ -1,0 +1,49 @@
+AI-Powered Sales Coaching
+Use Case: Deliver real-time coaching tips to sales reps during calls based on customer sentiment and data signals.
+
+How: Data Cloud brings together interaction history, Einstein Conversation Insights, and buyer intent data.
+Sales Cloud Action: Surface playbooks or talking points dynamically via Sales Engagement.
+Edge Factor: Hyper-personalized, real-time coaching boosts close rates.
+
+As a sales rep is on a call, Einstein analyzes real-time data (sentiment, opportunity stage, customer behavior) 
+and suggests contextual coaching tips—like objection handling, 
+product positioning, or next best steps—via a dynamic assistant in Sales Cloud.
+
+
+
+You are a smart sales coach assisting a sales rep during a live call. Use the following details to give real-time coaching tips.
+
+Customer sentiment: {{Customer_Sentiment}}
+Stage of Opportunity: {{Opportunity_Stage}}
+Recent objections: {{Recent_Objections}}
+Competitor mentioned: {{Competitor_Name}}
+Lead score: {{Lead_Score}}
+Customer industry: {{Customer_Industry}}
+Prior interaction summary: {{Interaction_Summary}}
+
+Give clear, concise coaching in 2-3 bullet points focused on closing the deal or handling objections.
+
+
+
+
+"Autonomous Sales Performance Coach"
+An AI agent continuously monitors sales rep interactions, sentiment, and performance. 
+It autonomously triggers coaching actions, schedules follow-ups, alerts managers, and improves rep behavior—without being asked.
+
+
+🔍 Value	AI is faster at spotting patterns (e.g., low sentiment + stalled deals) than a manager; improves productivity and consistency.
+🛠️ Work	The agent listens to calls, evaluates sentiment, checks pipeline health, and takes actions like sending coaching Slack messages, scheduling training, or flagging issues to managers.
+📊 Decision-Making	Uses logic trees: e.g., "If call sentiment < 0.4 and opportunity stage = Proposal, then trigger 'Pricing Objection' coaching tip and Slack to rep + manager."
+⚖️ Risk	Works within Salesforce’s ecosystem. Does not override user permissions. All actions logged and traceable.
+📡 Data	Leverages Conversation Insights, Opportunity history, sentiment analysis, and Data Cloud for unified profiles.
+
+
+What the Autonomous Agent Does:
+🧭 Monitors sales rep calls & pipeline in real time
+🧠 Applies LLM + rules to decide coaching actions
+💬 Sends actionable Slack messages to reps with coaching tips
+📆 Schedules coaching sessions or micro-trainings via Flow
+📈 Tracks response impact (conversion rate, win rate, sentiment improvement)
+
+
+“Increase win rates for mid-funnel opportunities by 15% by autonomously coaching sales reps based on live customer sentiment and behavior patterns.”
