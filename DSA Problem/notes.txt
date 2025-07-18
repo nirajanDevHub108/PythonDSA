@@ -47,3 +47,92 @@ What the Autonomous Agent Does:
 
 
 “Increase win rates for mid-funnel opportunities by 15% by autonomously coaching sales reps based on live customer sentiment and behavior patterns.”
+
+
+
+
+💼 Hackathon Use Case:
+🎯 “Agentforce Auto-Rep: Smart Lead Qualifier + Slack Notifier”
+🧠 Overview:
+An autonomous AI sales agent (Auto-Rep) that qualifies inbound leads, uses Data Cloud for enrichment and scoring, and proactively sends Slack alerts with next-best actions or meeting links to Sales Reps — without human intervention.
+
+✅ Business Problem:
+Sales teams waste time manually qualifying leads or miss hot leads due to delays in follow-up. There’s no intelligent system to prioritize, enrich, and act on incoming leads in real time.
+
+🤖 What the Autonomous Agent Does:
+The agent:
+Monitors new leads in real-time (created in Salesforce).
+Enriches the lead using Data Cloud (firmographics, recent behavior, etc.).
+Scores the lead using insights (intent, industry, source, etc.).
+Qualifies or disqualifies based on pre-set rules.
+If qualified:
+Generates a short AI summary with next steps.
+Schedules a meeting or sends follow-up link.
+Sends Slack DM to assigned rep with all details and action buttons.
+All actions happen autonomously, without a human triggering them.
+
+🛠️ Tools Used:
+Tool	Purpose
+Sales Cloud	Stores lead & opportunity data
+Data Cloud	Enriches and scores leads using unified profiles
+Prompt Builder	AI-generated sales summary
+Flow Builder	Automates lead processing and agent logic
+Slack Connector	Sends notifications and meeting links
+Einstein 1 Platform	Orchestrates data, logic, and AI
+Custom Metadata/Rules	Business logic for scoring/qualification
+🗺️ Workflow / Architecture:
+plaintext
+Copy
+Edit
+1. Lead Created in Salesforce
+    ↓
+2. Data Cloud enriches the Lead Profile
+    ↓
+3. Flow triggers on data update
+    ↓
+4. Lead Score is calculated from insights
+    ↓
+5. Decision: Qualified or Not?
+    → No → Update Lead Status = "Disqualified"
+    → Yes ↓
+6. Prompt Builder generates:
+    - Summary of lead
+    - Suggested pitch
+    - Call-to-action
+    ↓
+7. Slack DM sent to Sales Rep:
+    - Lead details
+    - AI summary
+    - Meeting link button (pre-scheduled)
+💬 Example Slack Message:
+markdown
+Copy
+Edit
+🚀 *New Qualified Lead Assigned!*
+
+👤 *Lead:* Priya Sharma  
+🏢 *Company:* Acme Corp  
+📈 *Score:* 87  
+🌐 *Recent Activity:* Viewed Pricing Page
+
+💡 *AI Summary:*  
+"Lead is from a fast-growing startup in FinTech. Show interest in enterprise pricing and integrations. Suggest demo and mention time-to-value."
+
+📅 [Schedule Demo]  
+🔍 [View in Salesforce]
+🔐 Business Logic (Autonomous Agent “Brain”):
+Rule	Logic
+Score > 70	Mark as “Qualified”
+Industry = “Finance” + Location = “US”	High Priority
+Lead Source = “Web” + Activity in last 3 days	Boost score
+Missing phone/email	Disqualify
+💡 Innovation Points:
+Uses real-time Data Cloud insights to qualify without human input.
+Embeds Slack automation for rep productivity.
+Prompt Builder handles personalized messaging.
+Entire workflow is autonomous, 24/7, never missing a lead.
+🚀 Why It’s a Great Hackathon Entry:
+Solves a real-world sales pain point.
+Demonstrates deep integration of multiple Salesforce platforms.
+Fully autonomous — no clicks or human triggers required.
+Easy to scale or adapt to other industries.
