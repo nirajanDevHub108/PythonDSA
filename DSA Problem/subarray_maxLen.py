@@ -7,9 +7,10 @@ def maxlen(arr, n, k):
         # Add the current element to the sum
         sum += arr[right]
         
-        # Shrink the window from the left if the sum exceeds k
-        while sum > k:
-            sum = sum - arr[left]  # Subtract the leftmost element from the sum
+        # Shrink the window from the left if the sum exceeds k better solution
+        #while sum > k:
+        if sum > k:
+            #sum = sum - arr[left]  # Subtract the leftmost element from the sum
             left += 1  # Move the left pointer to the right
         
         # Update the maximum length if the current sum is within the limit
