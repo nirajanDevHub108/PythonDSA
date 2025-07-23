@@ -39,3 +39,9 @@ i = 0
 while i < n:
     print(a[i])
     i += 1
+
+'''Using enumerate()
+#We can also use the enumerate() function to iterate through the list. #This method provides both the index (i) and the value (val) of each element during the loop.'''
+
+for i , val in enumerate(a):
+    print(f"Index: {i}, Value: {val}")
