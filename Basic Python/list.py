@@ -45,3 +45,19 @@ while i < n:
 
 for i , val in enumerate(a):
     print(f"Index: {i}, Value: {val}")
+
+#nested list is a list having more lists in it
+
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+# Accessing elements in a nested list at row 2 and colum 3
+print(matrix[1][2])
+
+'''List Comprehension in Python
+List comprehension is a concise way to create lists using a single line of code. It is useful for applying an operation or filter to items in an iterable, such as a list or range.'''
+
+squares =[x ** 2 for x in range(10)]
+print(squares)
