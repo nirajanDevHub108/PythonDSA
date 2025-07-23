@@ -1,5 +1,5 @@
 #Lists are very similar to arrays. They can contain any type of variable, and they can contain as many variables as you wish. Lists can also be iterated over in a very simple manner. Here is an example of how to build a list.
-myList = []
+'''myList = []
 myList.append(1)
 myList.append(2)
 myList.append(3)
@@ -25,3 +25,17 @@ a = [1998, 2002]
 b = [2014, 2016] 
 
 print ((a + b)*2) # 1998,2002,2014,2016,1998,2002,2014,2016
+'''
+
+#Using for Loop with range()
+a = [1, 2, 3, 4, 5] 
+n = len(a)# get the length  list a
+
+#for i in range (n):
+    #print(a[i])
+
+#Using while Loop
+i = 0
+while i < n:
+    print(a[i])
+    i += 1
