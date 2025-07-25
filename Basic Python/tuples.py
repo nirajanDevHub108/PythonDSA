@@ -64,3 +64,16 @@ my_tuple_list = list(my_tuple)  # Convert tuple to list
 my_tuple_list.append(6) # Add a new item
 my_tuple = tuple(my_tuple_list) # Convert list back to tuple
 print("Tuple after adding new item:", my_tuple)
+
+# Remove Item from Tuple
+my_tuple_list = list(my_tuple)  # Convert tuple to list
+my_tuple_list.remove(4) # Remove the item
+my_tuple = tuple(my_tuple_list)  # Convert list back to tuple
+print("Tuple after removing item:", my_tuple)
+
+#looping through the tuple 
+for item in my_tuple:
+   print("Item in tuple:", item)
+
+#Unpacking a Tuple
+'''When we create a tuple, we normally assign values to it. This is called "packing" a tuple:'''
