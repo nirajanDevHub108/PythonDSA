@@ -52,3 +52,15 @@ if "apple" in thistuple:
 '''Once a tuple is created, you cannot change its values. Tuples are unchangeable, or immutable as it also is called.
 
 But there is a workaround. You can convert the tuple into a list, change the list, and convert the list back into a tuple.'''
+
+# Convert tuple to list, change the list, and convert back to tuple
+my_tuple_list = list(my_tuple)  # Convert tuple to list
+my_tuple_list[0] = 10  # Change the first item
+my_tuple = tuple(my_tuple_list)  # Convert list back to tuple
+print("Tuple after changing first item:", my_tuple)
+
+#add item in tuple
+my_tuple_list = list(my_tuple)  # Convert tuple to list
+my_tuple_list.append(6) # Add a new item
+my_tuple = tuple(my_tuple_list) # Convert list back to tuple
+print("Tuple after adding new item:", my_tuple)
