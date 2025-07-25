@@ -75,5 +75,34 @@ print("Tuple after removing item:", my_tuple)
 for item in my_tuple:
    print("Item in tuple:", item)
 
+#Loop Through the Index Numbers
+for i in range (len(my_tuple)):
+    print("Item at index", i, "is", my_tuple[i])
+
+#Using a While Loop
+print("Using a while loop to iterate through the tuple:")
+i = 0
+while i < (len(my_tuple)):
+   print("Item at index", i, "is", my_tuple[i])
+   i+=1
+
+
 #Unpacking a Tuple
 '''When we create a tuple, we normally assign values to it. This is called "packing" a tuple:'''
+packed_tuple = (1, 2, 3)
+# Unpacking a tuple into variables
+a, b, c = packed_tuple
+print("Unpacked values:", a, b, c)
+
+#example-2 of unpacking 
+fruits = ("apple", "banana", "cherry")
+# Unpacking the tuple into variables
+x , y , z = fruits
+print("Unpacked fruits:", x, y, z)
+
+# Using the * operator to unpack a tuple Using Asterisk*
+# Unpacking with the * operator
+numbers = (1, 2, 3, 4, 5)
+a, *b, c = numbers  # a will be 1, b will be [2, 3, 4], c will be 5 value of variable b with * will be assigned as a list
+print("Unpacked numbers:", a, b, c)
+
