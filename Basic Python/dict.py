@@ -103,3 +103,15 @@ this_dict.clear()
 #Print all key names in the dictionary, one by one:
 for x in this_dict:
   print(x)
+
+#Print all values in the dictionary, one by one:
+for x in this_dict:
+  print(this_dict[x])
+
+#You can also use the values() method to return values of a dictionary:
+for x in this_dict.values():
+  print(x)
+
+#You can use the keys() method to return the keys of a dictionary:
+for x in this_dict.keys():
+  print(x)
