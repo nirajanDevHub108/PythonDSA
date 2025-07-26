@@ -34,3 +34,50 @@ print (set1)
 #Access Items
 for x in my_set:
     print(x)
+
+#Check if "banana" is present in the set:
+print ("banana" not in this_set)
+
+'''Add Sets
+To add items from another set into the current set, use the update() method'''
+this_set.update(my_set)
+print(this_set)
+
+# The object in the update() method does not have to be a set, it can be any iterable object (tuples, lists, dictionaries etc.).
+
+mylist = ["kiwi", "orange"]
+
+this_set.update(mylist)
+print(this_set)
+
+this_set.discard("kiwi")
+print(this_set)
+
+# using pop method
+x = this_set.pop()
+
+print(x)
+
+#The clear() method empties the set:
+x =this_set.clear()
+
+#The del keyword will delete the set completely:
+
+del my_set
+
+'''Join Sets
+There are several ways to join two or more sets in Python.
+
+The union() and update() methods joins all items from both sets.
+
+The intersection() method keeps ONLY the duplicates.
+
+The difference() method keeps the items from the first set that are not in the other set(s).
+
+The symmetric_difference() method keeps all items EXCEPT the duplicates.'''
+set1 = {"a", "b", "c"}
+set2 = {1, 2, 3}
+
+set3 = set1.union(set2)
+print(set3)
+
