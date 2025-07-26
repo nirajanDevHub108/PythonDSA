@@ -8,7 +8,7 @@ A tuple is a collection which is ordered and unchangeable.
 Tuples are written with round brackets.'''
 
 # Creating a tuple
-my_tuple = (1, 2, 3, 4, 5 ,4)
+my_tuple = (1, 2, 3, 4, 5 ,4 ,4,4)
 print("Tuple:", my_tuple)
 
 # lengrth of tuple
@@ -106,3 +106,17 @@ numbers = (1, 2, 3, 4, 5)
 a, *b, c = numbers  # a will be 1, b will be [2, 3, 4], c will be 5 value of variable b with * will be assigned as a list
 print("Unpacked numbers:", a, b, c)
 
+#Join Two Tuples
+tuple1 = (1, 2, 3)
+tuple2 = (4, 5, 6)
+
+joined_tuple = tuple1 + tuple2  # Joining two tuples
+print("Joined tuple:", joined_tuple)
+
+# Multiply Tuples
+multiplied_tuple = tuple1 * 2  # Multiplying a tuple   
+print("Multiplied tuple:", multiplied_tuple)
+
+# Count Occurrences of an Item
+count_of_4 = my_tuple.count(4)  # Counting occurrences of item 4
+print("Count of 4 in tuple:", count_of_4)
