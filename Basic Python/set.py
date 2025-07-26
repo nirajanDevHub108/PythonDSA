@@ -17,6 +17,20 @@ print("apple" in this_set)
 
 # duplicATION is not allowed 
 
-my_set ={ 1 , 2 , 4, 4, 6}
+my_set ={ 1 , 2 , 4, 4, 6, True}
 
 print("it doesnot include duplicate value " ,my_set)
+
+#length of the set
+print(len(my_set))
+
+print(type(my_set))
+
+#The set() Constructor we can use set constructor to create a set
+
+set1 = set(('akhil' , 'dabbu ' , ' Niraj'))
+print (set1)
+
+#Access Items
+for x in my_set:
+    print(x)
