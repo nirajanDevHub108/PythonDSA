@@ -83,3 +83,92 @@ set3 = set1 | set2
 print(set3)
 
 #You can use the | operator instead of the union() method, and you will get the same result.
+
+
+#Join Multiple Sets
+#All the joining methods and operators can be used to join multiple sets
+
+set1 = {"a", "b", "c"}
+set2 = {1, 2, 3}
+set3 = {"John", "Elena"}
+set4 = {"apple", "bananas", "cherry"}
+
+#myset = set1.union(set2, set3, set4)
+myset = set1 | set2 | set3 | set4
+print(myset)
+
+'''Join a Set and a Tuple
+The union() method allows you to join a set with other data types, like lists or tuples.
+
+The result will be a set.'''
+
+x = {"a", "b", "c"}
+y = (1, 2, 3)
+
+z = x.union(y)
+print(z)
+
+
+#update()
+set1 = {"a", "b" , "c"}
+set2 = {1, 2, 3}
+
+set1.update(set2)
+print(set1)
+
+#intersection() keep the matching elements 
+set1 = {"apple", "banana", "cherry"}
+set2 = {"google", "microsoft", "apple"}
+
+set3 = set1 & set2
+print(set3)
+
+#The intersection_update() method will also keep ONLY the duplicates, but it will change the original set instead of returning a new set.
+
+set1.intersection_update(set2)
+print(set1)
+
+#Difference
+'''The difference() method will return a new set that will contain only the items from the first set that are not present in the other set.'''
+set1 = {"apple", "banana", "cherry"}
+set2 = {"google", "microsoft", "apple"}
+
+set3 = set1.difference(set2)
+#set3 = set1 -set2
+print(set3)
+set1.difference_update(set2)
+
+print(set1)
+#The difference_update() method will also keep the items from the first set that are not in the other set, but it will change the original set instead of returning a new set.
+
+
+#Symmetric Differences
+'''The symmetric_difference() method will keep only the elements that are NOT present in both sets.
+You can use the ^ operator instead of the symmetric_difference() method, and you will get the same result.'''
+
+set1 = {"apple", "banana", "cherry"}
+set2 = {"google", "microsoft", "apple"}
+
+set3 = set1 ^ set2
+print(set3)
+
+'''Method	Shortcut	Description
+add()	 	    Adds an element to the set
+clear()	 	    Removes all the elements from the set
+copy()	 	    Returns a copy of the set
+difference()	-	Returns a set containing the difference between two or more sets
+difference_update()	-=	Removes the items in this set that are also included in another, specified set
+discard()	 	        Remove the specified item
+intersection()	&	    Returns a set, that is the intersection of two other sets
+intersection_update()	&=	Removes the items in this set that are not present in other, specified set(s)
+isdisjoint()	 	Returns whether two sets have a intersection or not
+issubset()	<=	    Returns whether another set contains this set or not
+ 	<	Returns whether all items in this set is present in other, specified set(s)
+issuperset()	>=	Returns whether this set contains another set or not
+ 	>	Returns whether all items in other, specified set(s) is present in this set
+pop()	 	Removes an element from the set
+remove()	 	Removes the specified element
+symmetric_difference()	^	Returns a set with the symmetric differences of two sets
+symmetric_difference_update()	^=	Inserts the symmetric differences from this set and another
+union()	|	Return a set containing the union of sets
+update()	|=	Update the set with the union of this set and others'''
