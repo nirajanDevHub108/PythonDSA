@@ -14,3 +14,9 @@ print(this_set)
 
 # Checking if an item exists in the set
 print("apple" in this_set)
+
+# duplicATION is not allowed 
+
+my_set ={ 1 , 2 , 4, 4, 6}
+
+print("it doesnot include duplicate value " ,my_set)
