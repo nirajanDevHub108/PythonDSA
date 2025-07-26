@@ -37,3 +37,27 @@ print(type(dic2))
 #dictonary constructor
 this_dict = dict(name = "akhil " , age = 23 , sex ="male " , country = "Nepal")
 print(this_dict)
+
+#accessing the dictonary item
+
+model = dic2.get("model")
+print(model)
+
+#The keys() method will return a list of all the keys in the dictionary.
+m = dic2.keys()
+print(m)
+
+
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+
+x = car.keys()
+
+print(x) #before the change
+
+car["color"] = "white"
+
+print(x) #after the change
