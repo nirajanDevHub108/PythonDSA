@@ -61,3 +61,45 @@ print(x) #before the change
 car["color"] = "white"
 
 print(x) #after the change
+
+x = dic2.values()
+
+#The items() method will return each item in a dictionary, as tuples in a list.
+
+x = dic2.items()
+print(x)
+
+if "model" in dic2:
+  print("Yes, 'model' is one of the keys in the thisdict dictionary")
+
+this_dict['role'] = "sales force developer"
+print(this_dict)
+
+'''Update Dictionary
+The update() method will update the dictionary with the items from a given argument. If the item does not exist, the item will be added.
+
+The argument must be a dictionary, or an iterable object with key:value pairs.'''
+
+#Removing Items
+#There are several methods to remove items from a dictionary:
+
+#The pop() method removes the item with the specified key name:
+
+this_dict.pop("age")
+print(this_dict)
+
+#The popitem() method removes the last inserted item 
+
+#The del keyword removes the item with the specified key name:
+
+del this_dict ["sex"]
+print(this_dict)
+
+#The clear() method empties the dictionary:
+
+this_dict.clear()
+
+#for 
+#Print all key names in the dictionary, one by one:
+for x in this_dict:
+  print(x)
