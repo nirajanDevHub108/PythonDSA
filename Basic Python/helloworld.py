@@ -33,7 +33,7 @@ elif age < 18:
 elif age >= 18 and age < 65:
     print("You are an adult.")
 else:
-    print("You are a senior citizen.")"""
+    print("You are a senior citizen.")
 
 # Taking input from the user
 num = int(input("Enter a value: "))
@@ -41,4 +41,8 @@ num = int(input("Enter a value: "))
 add = num + 5
 
 # Output
-print("The sum is %d" %add)
+print("The sum is %d" %add)"""
+
+c=input("      ")
+c1=input("      ")
+c2=input("      ")
