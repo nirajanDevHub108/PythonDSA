@@ -12,7 +12,7 @@ def distinctarr(a , b):
     for i in range (n):
         if i == 0 or nums[i] != nums[i-1]:
             result.append(nums[i])
-    return result
+    return len(result)
 
 a =[1, 2, 3, 2, 1]
 b =[3, 2, 2, 3, 3, 2]
