@@ -1,0 +1,30 @@
+'''
+Contains Duplicate
+Solved 
+Given an integer array nums, return true if any value appears more than once in the array, otherwise return false.
+
+Example 1:
+
+Input: nums = [1, 2, 3, 3]
+
+Output: true
+'''
+
+
+from typing import List
+
+def hasDuplicate(nums: List[int]) -> bool:
+    nums.sort()
+    
+    if len(nums) == 1:
+        return False
+
+    for i in range(1, len(nums)):  # start from index 1 to avoid comparing with nums[-1] accidentally
+        if nums[i] == nums[i - 1]:
+            return True
+    
+    return False
+
+# Example calls:
+print(hasDuplicate([1, 2, 3, 4]))  # False
+print(hasDuplicate([1, 2, 3, 1]))  # True
