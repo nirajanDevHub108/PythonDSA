@@ -28,3 +28,21 @@ def hasDuplicate(nums: List[int]) -> bool:
 # Example calls:
 print(hasDuplicate([1, 2, 3, 4]))  # False
 print(hasDuplicate([1, 2, 3, 1]))  # True
+
+'''3. Hash Set
+class Solution:
+    def hasDuplicate(self, nums: List[int]) -> bool:
+        seen = set()
+        for num in nums:
+            if num in seen:
+                return True
+            seen.add(num)
+        return False
+Time & Space Complexity
+Time complexity: 
+O(n)
+O(n)
+Space complexity: 
+O(n)
+O(n)
+'''
