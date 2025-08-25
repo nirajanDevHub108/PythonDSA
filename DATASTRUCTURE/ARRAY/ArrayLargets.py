@@ -26,5 +26,6 @@ arr = [2,7,1,9,3]
 
 print(smallestElement(arr))
 
-
+assert smallestElement([2,3,4,56,6]) == 2
+print("All test cases are passed ✅")
 #Write a function to find the sum of all elemnt in a list
