@@ -1,0 +1,7 @@
+this file will contains tips and shortcuts to solve array problems
+
+
+# Merge and remove duplicates from an array tips
+merged = list(set(arr1 + arr2))
+
+sort an array-> arr.sort()
