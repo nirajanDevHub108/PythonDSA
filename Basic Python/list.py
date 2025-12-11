@@ -63,11 +63,12 @@ List comprehension is a concise way to create lists using a single line of code.
 # print(squares)
 
 arr=[10,20,30,40]
-
+print(arr[-2])
 #printing all element
-for i in arr:
-    print(i)
+# for i in arr:
+#     print(i)
 
 #print index wise
 for i in range(len(arr)):
-    print(f" index :{i} ,{arr[i]}")
+    # print(f" index :{i} ,{arr[i]}")
+    print(arr[-1])
