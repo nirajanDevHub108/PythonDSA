@@ -67,3 +67,7 @@ arr=[10,20,30,40]
 #printing all element
 for i in arr:
     print(i)
+
+#print index wise
+for i in range(len(arr)):
+    print(f" index :{i} ,{arr[i]}")
