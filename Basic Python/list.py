@@ -69,6 +69,10 @@ print(arr[-2])
 #     print(i)
 
 #print index wise
+#counting the elements
+count=0
 for i in range(len(arr)):
     # print(f" index :{i} ,{arr[i]}")
+    count+=1
     print(arr[-1])
+print(count)
