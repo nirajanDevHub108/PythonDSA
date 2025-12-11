@@ -43,18 +43,18 @@ n = len(a)# get the length  list a
 '''Using enumerate()
 #We can also use the enumerate() function to iterate through the list. #This method provides both the index (i) and the value (val) of each element during the loop.'''
 
-for i , val in enumerate(a):
-    print(f"Index: {i}, Value: {val}")
+# for i , val in enumerate(a):
+#     print(f"Index: {i}, Value: {val}")
 
 #nested list is a list having more lists in it
 
-matrix = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
-# Accessing elements in a nested list at row 2 and colum 3
-print(matrix[1][2])
+# matrix = [
+#     [1, 2, 3],
+#     [4, 5, 6],
+#     [7, 8, 9]
+# ]
+# # Accessing elements in a nested list at row 2 and colum 3
+# print(matrix[1][2])
 
 '''List Comprehension in Python
 List comprehension is a concise way to create lists using a single line of code. It is useful for applying an operation or filter to items in an iterable, such as a list or range.'''
@@ -62,3 +62,8 @@ List comprehension is a concise way to create lists using a single line of code.
 # squares =[x ** 2 for x in range(10)]
 # print(squares)
 
+arr=[10,20,30,40]
+
+#printing all element
+for i in arr:
+    print(i)
