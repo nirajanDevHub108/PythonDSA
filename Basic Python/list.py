@@ -9,7 +9,7 @@ print(myList[0])
 for x in myList:
     print(x)
 
-#Accessing an index which does not exist generates an exception (an error).
+Accessing an index which does not exist generates an exception (an error).
 myList1 = [1 , 3 , 5]
 myList1.append ([5,6,7,8])
 print(myList1)
@@ -35,10 +35,10 @@ n = len(a)# get the length  list a
     #print(a[i])
 
 #Using while Loop
-i = 0
-while i < n:
-    print(a[i])
-    i += 1
+# i = 0
+# while i < n:
+#     print(a[i])
+#     i += 1
 
 '''Using enumerate()
 #We can also use the enumerate() function to iterate through the list. #This method provides both the index (i) and the value (val) of each element during the loop.'''
@@ -59,5 +59,6 @@ print(matrix[1][2])
 '''List Comprehension in Python
 List comprehension is a concise way to create lists using a single line of code. It is useful for applying an operation or filter to items in an iterable, such as a list or range.'''
 
-squares =[x ** 2 for x in range(10)]
-print(squares)
+# squares =[x ** 2 for x in range(10)]
+# print(squares)
+
