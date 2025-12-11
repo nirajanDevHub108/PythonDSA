@@ -79,8 +79,17 @@ arr=[10,20,30,40]
 
 #2 sum of all elements in an array
 
-sum=0
+# sum=0
 
-for i in arr:
-    sum+=i
-print(sum)
+# for i in arr:
+#     sum+=i
+# print(sum)
+
+#find maximum element in an array
+
+max=arr[0]
+
+for num in arr:
+    if num > max:
+        max=num
+print(max)
