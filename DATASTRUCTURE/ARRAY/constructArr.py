@@ -2,6 +2,7 @@
 
 # Note: If the size of original array res[] is n, then the size of pair-sum array arr[] would be n * (n -1) /2. We may assume that the pair-sum array arr[] is appropriate in size.
 # Note that, if the original array is correct then the driver code will print true, else false;
+#POTD-11-12-2025 day-3
 
 class Solution:
     def constructArr(self, arr):
