@@ -93,3 +93,8 @@ for num in arr:
     if num > max:
         max=num
 print(max)
+
+# printe an array in reverse
+#arr=[1,2,3]
+for i in range(len(arr)):
+    print(arr[i-1],end=" ")
