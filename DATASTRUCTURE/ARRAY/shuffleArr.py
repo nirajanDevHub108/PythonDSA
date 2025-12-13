@@ -2,3 +2,11 @@
 
 # Return the array in the form [x1,y1,x2,y2,...,xn,yn].
 
+class Solution():
+    def suffle(self,arr,n):
+        res=[]
+        for i in range(n):
+            res.append(arr[i])
+            res.append(arr[i+n])
+        return res
+
