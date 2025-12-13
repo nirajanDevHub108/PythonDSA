@@ -1,3 +1,5 @@
+# POTD-13-12-2025 GFG
+
 # #Given a square matrix mat[][], the task is to swap the elements of the major and minor diagonals.
 
 # Major Diagonal: Elements that lie from the top-left corner to the bottom-right corner of the matrix (i.e., where row index equals column index).
