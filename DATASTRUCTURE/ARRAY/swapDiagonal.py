@@ -7,7 +7,7 @@ class Solution:
     def swapDiagonal(self,mat):
         n=len(mat)
         for i in range(n):
-            #
+            #here we are swaping each oth index element with the last elemnt ie (n-1-i) and leaving middile row for odd length nxn matrix without affecting their sum
             mat[i][i],mat[i][n-1-i] = mat[i][n-1-i],mat[i][i]
         return mat
     
