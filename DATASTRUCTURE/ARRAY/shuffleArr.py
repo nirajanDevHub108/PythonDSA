@@ -9,4 +9,9 @@ class Solution():
             res.append(arr[i])
             res.append(arr[i+n])
         return res
+sol=Solution()
+arr=[2,5,1,3,4,7]
+n = 3
+result=sol.suffle(arr,n)
+print(result)
 
