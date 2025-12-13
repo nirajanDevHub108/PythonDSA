@@ -1,3 +1,7 @@
+# You are given a square matrix of size n x n. Your task is to find the transpose of the given matrix.
+# The transpose of a matrix is obtained by converting all the rows to columns and all the columns to rows.
+
+
 class Solution:
     def transpose(self, mat):
         # code here
