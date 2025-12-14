@@ -1,3 +1,11 @@
+#Given a 2D integer matrix mat[][] and a list of queries queries[][], your task is to answer a series of submatrix sum queries.
+
+# Each query is represented as a list [r1, c1, r2, c2], where:
+
+# (r1, c1) is the top-left coordinate of the submatrix
+# (r2, c2) is the bottom-right coordinate of the submatrix (both inclusive)
+# Your task is to return a list of integers, the sum of elements within the specified submatrix for each query.
+
 class Solution:
     def prefixSum2D(self, mat, queries):
         # code here 
@@ -23,7 +31,7 @@ class Solution:
             total=prefixSum[r2][c2]
 
             if r1 > 0:
-                total -= prefixSum[r1-1][r2]
+                total -= prefixSum[r1-1][c2]
             if c1 >0:
                 total -= prefixSum[r2][c1-1]
             if r1>0 and c1>0:
