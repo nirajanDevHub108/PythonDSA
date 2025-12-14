@@ -6,7 +6,15 @@ class Solution:
 
         #declare prefix sum matrix 
         prefixSum=[[0]*m for _ in range(n)]
-        
+
+        for i in range(n):
+            for j in range(m):
+                prefixSum[i][j]=mat[i][j]
+
+                if i > 0:
+                    prefixSum[i][j] += prefixSum[i-1][j]
+        return prefixSum
+
 
 
 
