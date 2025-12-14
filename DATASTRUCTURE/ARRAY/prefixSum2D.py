@@ -13,7 +13,25 @@ class Solution:
 
                 if i > 0:
                     prefixSum[i][j] += prefixSum[i-1][j]
-        return prefixSum
+                if j > 0:
+                    prefixSum[i][j] +=prefixSum[i][j-1]
+                if i > 0 and j >0:
+                    prefixSum[i][j] -= prefixSum[i-1][j-1]
+        #result arr
+        result=[]
+        for r1,c1,r2,c2 in queries:
+            total=prefixSum[r2][c2]
+
+            if r1 > 0:
+                total -= prefixSum[r1-1][r2]
+            if c1 >0:
+                total -= prefixSum[r2][c1-1]
+            if r1>0 and c1>0:
+                total+=prefixSum[r1-1][c1-1]
+            
+            result.append(total)
+
+        return result
 
 
 
