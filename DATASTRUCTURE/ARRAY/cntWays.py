@@ -1,7 +1,5 @@
-class Solution:
-    def cntWays(self, arr):
-        count=0
-        for i in range(len(arr)):
+#brute force approach using 3 for loop
+'''        for i in range(len(arr)):
             res=[]
             for j in range(len(arr)):
                 if j != i:
@@ -15,6 +13,12 @@ class Solution:
                   odd_sum+=res[k]
             if even_sum == odd_sum:
               count+=1
+              '''
+
+class Solution:
+    def cntWays(self, arr):
+        count=0
+
         return count
 
 sol=Solution()
