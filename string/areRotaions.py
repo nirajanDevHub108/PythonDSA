@@ -1,3 +1,6 @@
+'''
+brute force approach is to take it by rotating 1 position that will
+'''
 class Solution:
     def areRotations(self, s1, s2):
         # code here
