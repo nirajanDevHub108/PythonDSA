@@ -1,5 +1,6 @@
-class Solution:
-    def BinarySearchIterative(self,arr,n,target):
+'''        
+        itertaive binary search algoritham
+        
         low=0
         high=n-1
         
@@ -10,7 +11,10 @@ class Solution:
             elif (arr[mid]< target):
                 low=mid+1
             else:
-                high=mid-1
+                high=mid-1'''
+class Solution:
+    def BinarySearchIterative(self,arr,n,target):
+
         return -1
 
     
