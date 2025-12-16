@@ -43,6 +43,13 @@ add = num + 5
 # Output
 print("The sum is %d" %add)"""
 
-c=input("      ")
-c1=input("      ")
-c2=input("      ")
+# c=input("      ")
+# c1=input("      ")
+# c2=input("      ")
+
+a, b, c = map(int, input("enter 3 numbers: ").split())
+
+product=(int(a)*int(b)*int(c))
+avg=(int(a)+int(b)+int(c))//3
+print("product is :" ,product)
+print("avg is :",avg)
