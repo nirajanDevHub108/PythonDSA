@@ -3,7 +3,7 @@ class Solution:
         for i in range(0,n,2):
             if arr[i]==target:
                 return i
-            elif arr[i]>target:
+            elif arr[i]>target:#at nay point arr[i] value is greater than target we will return -1
                 return -1
         return -1
     
