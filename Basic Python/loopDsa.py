@@ -20,3 +20,8 @@ print("total of al number is :",total)
 for i in range(len(arr)-1,-1,-1):
     print(arr[i],end=' ')
 print()
+
+#find all even indices element from an array
+for i in range(0,len(arr),2):
+    print(arr[i],end='')
+print()
