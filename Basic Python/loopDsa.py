@@ -1,5 +1,5 @@
 # find max uisng range value
-arr=[1,2,3,4,5]
+arr=[1,2,3]
 max_val=0
 for i in range(len(arr)):#iterating 0 to n-1 0,1,2,3,4=5 elemnts
     if max_val < arr[i]:
@@ -25,3 +25,9 @@ print()
 for i in range(0,len(arr),2):
     print(arr[i],end='')
 print()
+
+print("----------------------------")
+
+for i in range(len(arr)):
+    for j in range(i+1,len(arr)):
+        print(arr[i],arr[j])
