@@ -39,3 +39,10 @@ for num in arr:
     if num == target:
         print(target," :found")
         break
+print("----------------------------")
+#loop with continue satatement-skip the condition ignore unwanted elements
+arr1=[1,-2,3,-4]
+for num in arr1:
+    if num<0:
+        continue
+    print(num)
