@@ -18,7 +18,7 @@ class Solution:
                 missing.append(i)
         return duplicates+missing
 sol=Solution()
-arr=[2,3,4,2,3,5, 12]
+arr=[1,2,2,4]
 res= sol.findTwoElement(arr)
 print(res)
 
