@@ -57,4 +57,13 @@ while (left <right):
     left+=1
     right-=1
 
+#Hashing in array used by creating a dict 
+arr2=[1,2,3,4,2,3]
+freq={}
+for num in arr2:
+    freq[num]=freq.get(num,0)+1
+print(freq)
+
+#loop +sliding window technique
+
 
