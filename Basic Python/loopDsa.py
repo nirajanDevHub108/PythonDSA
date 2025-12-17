@@ -46,3 +46,15 @@ for num in arr1:
     if num<0:
         continue
     print(num)
+
+print("----------------------------")
+
+#Two pointer loop (while>for) when pointer move dynamically
+left,right=0,len(arr1)-1
+
+while (left <right):
+    print(arr1[left],arr1[right])
+    left+=1
+    right-=1
+
+
