@@ -12,3 +12,11 @@ total=0
 for num in arr:
     total+=num
 print("total of al number is :",total)
+
+#loop with range value but with jumping logic range(start,end,step)
+#wehn to use skiping elemnt,even/odd index,arthemetic progression ect
+
+#reverseing using jumping loging
+for i in range(len(arr)-1,-1,-1):
+    print(arr[i],end=' ')
+print()
