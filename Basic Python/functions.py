@@ -1,4 +1,4 @@
-def hello_world():
+'''def hello_world():
     print("hello world")
 hello_world()
 
@@ -21,4 +21,22 @@ def multiple_named_items(**kargs):
     print(kargs)
     print(type(kargs))
 
-multiple_named_items(First="dave",Last="akhil")
+multiple_named_items(First="dave",Last="akhil")'''
+
+def missingNum( arr):
+        # code here
+        n=len(arr)+1
+        total_sum=n*(n+1)//2
+        arr_sum=0
+        for i in arr:
+            arr_sum+=i
+        
+
+        
+        res=total_sum-arr_sum
+
+        return res
+
+arr=[2, 6, 5, 1, 3]
+res=missingNum(arr)
+print(res)
