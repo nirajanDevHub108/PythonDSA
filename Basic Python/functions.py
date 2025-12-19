@@ -15,3 +15,10 @@ def multiple_items(*args):
     print(type(args))
 
 multiple_items("dave","akhil","chotu")
+
+#multinamed items 
+def multiple_named_items(**kargs):
+    print(kargs)
+    print(type(kargs))
+
+multiple_named_items(First="dave",Last="akhil")
