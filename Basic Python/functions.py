@@ -9,3 +9,9 @@ def sum(num1,num2):
 sum(2,5)
 sum(1,7)
 sum(100,200)
+#taking multiple arguments
+def multiple_items(*args):
+    print(args)
+    print(type(args))
+
+multiple_items("dave","akhil","chotu")
