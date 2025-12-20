@@ -5,7 +5,7 @@ Examples :
 Input: arr[] = [1, 3, 5, 6], k = 5
 Output: 2
 Explanation: Since 5 is found at index 2 as arr[2] = 5, the output is 2.
-
+here we used linear serach but even after finding k we have to return arr index where that elemnt should present if that k is not there so we just compare the i value arr[i]>=k return i value index value
 '''
 
 
