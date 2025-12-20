@@ -1,3 +1,14 @@
+'''Given a sorted array arr[] (0-index based) of distinct integers and an integer k, find the index of k if it is present in the arr[]. If not, return the index where k should be inserted to maintain the sorted order.
+
+Examples :
+
+Input: arr[] = [1, 3, 5, 6], k = 5
+Output: 2
+Explanation: Since 5 is found at index 2 as arr[2] = 5, the output is 2.
+
+'''
+
+
 class Solution:
     def searchInsertK(self, arr, k):
         # code here
