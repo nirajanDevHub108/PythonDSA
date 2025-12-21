@@ -74,3 +74,32 @@ if __name__ == "__main__":
     output = sol.countX(arr, queries)
 
     print(output)
+
+'''from bisect import bisect_left, bisect_right
+class Solution:
+    def countXInRange(self, arr, queries):
+        # code here
+        pos = {}
+        for i, val in enumerate(arr):
+            if val not in pos:
+                pos[val] = []
+            pos[val].append(i)
+
+        result = []
+
+        # Step 2: Process each query
+        for l, r, x in queries:
+            if x not in pos:
+                result.append(0)
+                continue
+
+            indices = pos[x]
+
+            left = bisect_left(indices, l)
+            right = bisect_right(indices, r)
+
+            result.append(right - left)
+
+        return result
+        
+        optimized one using bisect module and hashmap'''
