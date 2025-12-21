@@ -1,3 +1,19 @@
+'''You are given a sorted array arr[] and a 2D array queries[][], where queries[i] represents a query in the form [l, r, x]. For each query, count how many times the number x appears in the subarray arr[l...r] (inclusive).
+
+Examples:
+
+Input: arr[] = [1, 2, 2, 4, 5, 5, 5, 8], queries[][] = [[0, 7, 5], [1, 2, 2], [0, 3, 7]]
+Output: [3, 2, 0]
+Explanation:
+Query [0, 7, 5] → elements from index 0 to 7 are [1, 2, 2, 4, 5, 5, 5, 8].
+Number 5 occurs 3 times.
+Query [1, 2, 2] → subarray is [2, 2], and 2 occurs 2 times.
+Query [0, 3, 7] → subarray is [1, 2, 2, 4], and 7 is not present.
+
+
+'''
+
+
 class Solution:
     def countX(self, arr, queries):
         result = []
