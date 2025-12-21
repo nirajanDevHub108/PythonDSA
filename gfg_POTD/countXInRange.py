@@ -1,0 +1,60 @@
+class Solution:
+    def countX(self, arr, queries):
+        result = []
+
+        for l, r, x in queries:
+            first = self.first_occurrence(arr, x)
+            if first == -1:
+                result.append(0)
+                continue
+
+            last = self.last_occurrence(arr, x)
+
+            start = max(first, l)
+            end = min(last, r)
+
+            if start > end:
+                result.append(0)
+            else:
+                result.append(end - start + 1)
+
+        return result
+
+    def first_occurrence(self, arr, x):
+        low, high = 0, len(arr) - 1
+        ans = -1
+        while low <= high:
+            mid = (low + high) // 2
+            if arr[mid] == x:
+                ans = mid
+                high = mid - 1
+            elif arr[mid] < x:
+                low = mid + 1
+            else:
+                high = mid - 1
+        return ans
+
+    def last_occurrence(self, arr, x):
+        low, high = 0, len(arr) - 1
+        ans = -1
+        while low <= high:
+            mid = (low + high) // 2
+            if arr[mid] == x:
+                ans = mid
+                low = mid + 1
+            elif arr[mid] < x:
+                low = mid + 1
+            else:
+                high = mid - 1
+        return ans
+
+
+# 🔹 DRIVER CODE
+if __name__ == "__main__":
+    arr = [1, 2, 2, 4, 5, 5, 5, 8]
+    queries = [[0, 7, 5], [1, 2, 2], [0, 3, 7]]
+
+    sol = Solution()
+    output = sol.countX(arr, queries)
+
+    print(output)
