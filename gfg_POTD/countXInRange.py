@@ -10,7 +10,7 @@ Number 5 occurs 3 times.
 Query [1, 2, 2] → subarray is [2, 2], and 2 occurs 2 times.
 Query [0, 3, 7] → subarray is [1, 2, 2, 4], and 7 is not present.
 
-
+we have used binary search tree to get the first and last occurances and then compre to get the x occurances in particular sub array of l-r range
 '''
 
 
