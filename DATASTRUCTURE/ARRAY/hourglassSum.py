@@ -38,3 +38,14 @@ def hourglassSum(arr):
                             arr[i+2][j]+arr[i+2][j+1]+arr[i+2][j+2])
             max_sum=max(max_sum,hourglass_sum)
     return max_sum
+
+arr = [
+    [-9, -9, -9, 1, 1, 1],
+    [ 0, -9,  0, 4, 3, 2],
+    [-9, -9, -9, 1, 2, 3],
+    [ 0,  0,  8, 6, 6, 0],
+    [ 0,  0,  0,-2, 0, 0],
+    [ 0,  0,  1, 2, 4, 0]
+]
+res=hourglassSum(arr)
+print(res)
