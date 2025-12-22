@@ -16,9 +16,9 @@ class Solution:
         for i in range(1,n+1):
             if i not in seen:
                 missing.append(i)
-        return duplicates+missing
+        return missing
 sol=Solution()
-arr=[1,2,2,4]
+arr=[1,1]
 res= sol.findTwoElement(arr)
 print(res)
 
