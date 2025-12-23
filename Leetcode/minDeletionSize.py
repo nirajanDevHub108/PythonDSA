@@ -3,6 +3,7 @@ problem-960-delete columns to make sorted II
 
 You are given an array of n strings strs, all of the same length.
 
+
 We may choose any deletion indices, and we delete all the characters in those indices for each string.
 
 For example, if we have strs = ["abcdef","uvwxyz"] and deletion indices {0, 2, 3}, then the final array after deletions is ["bef", "vyz"].
