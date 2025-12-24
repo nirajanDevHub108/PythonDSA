@@ -43,9 +43,13 @@ for i in range(n):
 123
 12
 1 
-
+line=n
+j =n-i+1 to print exact pattern
 '''
-
+for i in range(n):
+    for j in range(1,n-i+1):
+        print(j,end="")
+    print()
 
 
 # 1
