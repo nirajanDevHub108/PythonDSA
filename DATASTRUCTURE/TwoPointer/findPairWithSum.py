@@ -44,3 +44,19 @@ def find_pair_with_sum(arr, target):
     return resultList
 
 print(find_pair_with_sum([1,3,2,2,4,5,7], 6))
+
+#reverse array only first half using two pointer
+
+arr=[1,2,3,4,5]
+left=0
+right=len(arr)//2
+while left<right:
+    arr[left],arr[right]=arr[right],arr[left]
+    left+=1
+    right-=1
+print(arr)
+
+
+#two sum problem
+#find two numbers whose sum is = target
+
