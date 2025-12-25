@@ -154,7 +154,13 @@ going for n times and printing i value
 
 lower part
 going for n time but printing n-i 
-
+for i in range(1, 2 * n):
+3	    stars = i if i <= n else 2 * n - i
+4	            
+5	            # for printing the stars in each row.
+6	    for j in range(1, stars + 1):
+7	        print("*", end="")
+8	    print()
 '''
 for i in range(1,n+1):
     for j in range(i):
