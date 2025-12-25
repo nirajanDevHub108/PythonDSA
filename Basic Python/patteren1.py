@@ -80,6 +80,15 @@ for i in range(n):
  2*3+1=7
  2*4+1=9
 '''
+for i in range(n):
+    #space printing
+    for j in range(n-i-1):
+        print(" ",end="")
+    
+    for j in range(2*i+1):
+        print("*",end="")
+    print()
+
 # 1
 # 3 5
 # 7 9 11
