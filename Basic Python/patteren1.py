@@ -88,6 +88,7 @@ for i in range(n):
     for j in range(2*i+1):
         print("*",end="")
     print()
+
 print("---------------------")
 '''
 *********
@@ -135,6 +136,35 @@ for i in range(n):
         print("*",end="")
 
     print()
+print("-----------------------")
+
+'''
+pattern-10
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+upper part 
+going for n times and printing i value
+
+lower part
+going for n time but printing n-i 
+
+'''
+for i in range(1,n+1):
+    for j in range(i):
+        print("*",end="")
+    print()
+for i in range(n):
+    for j in range(n-i):
+        print("*",end="")
+    print()
+        
 # 1
 # 3 5
 # 7 9 11
