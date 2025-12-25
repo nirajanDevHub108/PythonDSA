@@ -88,7 +88,35 @@ for i in range(n):
     for j in range(2*i+1):
         print("*",end="")
     print()
+print("---------------------")
+'''
+*********
+ *******
+  *****
+   ***
+    *
+[0,9,0]
+[1,7,1]
+[2,5,2]
+[3,3,3]
+[4,1,4]
 
+star print(2*n-2*i+1) 
+i=0
+2*5-i-1=9
+i=1
+2*5-i-1=
+space=i value
+
+    '''
+for i in range(n):
+    for j in range(i):
+        print(" ",end="")
+    for j in range(2*n - (2*i+1)):
+        print("*",end="")
+    # for j in range(i):
+    #     print(" ",end="")
+    print()
 # 1
 # 3 5
 # 7 9 11
