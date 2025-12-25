@@ -60,3 +60,19 @@ print(arr)
 #two sum problem
 #find two numbers whose sum is = target
 
+arr=[1,2,3,4,5,6] 
+target=6
+left=0
+right=len(arr)-1
+sum=0
+while left<right:
+    sum=arr[left]+arr[right]
+    if sum == target:
+        print([left,right])
+        break
+    elif sum < target:
+        left+=1
+    else:
+        right-=1
+
+
