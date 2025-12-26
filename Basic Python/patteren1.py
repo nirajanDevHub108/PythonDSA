@@ -197,6 +197,22 @@ for i in range(n):
 # 123    321
 # 1234  4321
 # 1234554321
+# number
+space=2*(n-1)
+for i in range(1,n+1):
+
+    for j in range(1,i+1):
+        print(j,end="")
+    
+    for j in range(1, space + 1):
+            print(" ", end="")
+
+    for j in range(i,0,-1):
+        print(j,end="")
+    print()
+    space-=2
+    # for j in range(1,)
+    # print()
     
 # 1
 # 3 5
