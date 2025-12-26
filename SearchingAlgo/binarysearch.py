@@ -21,6 +21,7 @@ class Solution:
             return -1
         if(arr[mid] == target):
             return mid
+            
         elif (arr[mid] < target):
             return self.BinarySearchIterative(arr,mid+1,high,target,)
         else:
@@ -32,8 +33,8 @@ class Solution:
     
 #main code
 #n=5
-arr = [2, 4, 6, 7, 8]
-target = 8
+arr = [1,2,3,4,5]
+target = 4
 
 sol = Solution()
 res = sol.BinarySearchIterative(arr, 0, len(arr) - 1, target)
