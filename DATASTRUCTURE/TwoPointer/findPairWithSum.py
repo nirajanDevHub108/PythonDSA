@@ -76,3 +76,18 @@ while left<right:
         right-=1
 
 
+#pattern3 remove duplicates from sorted array in-place
+#intuition
+# slow-keeps unique Index
+# fast scans array
+
+arr=[1,1,2,2,3]
+slow=0
+for fast in range(1,len(arr)):
+    if arr[fast] != arr[slow]:
+        slow+=1
+        arr[slow] =arr[fast]
+    print(arr[:slow+1])
+
+
+
