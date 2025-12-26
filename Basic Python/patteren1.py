@@ -189,7 +189,15 @@ for i in range(n):
         print(start,end="")
         start=1-start
     print()  
-         
+
+#pattern 12
+
+# 1        1
+# 12      21
+# 123    321
+# 1234  4321
+# 1234554321
+    
 # 1
 # 3 5
 # 7 9 11
