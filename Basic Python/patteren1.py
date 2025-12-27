@@ -201,14 +201,14 @@ for i in range(n):
 space=2*(n-1)
 for i in range(1,n+1):
 
-    for j in range(1,i+1):
-        print(j,end="")
+    for j in range(i):
+        print(j+1,end="")
     
-    for j in range(1, space + 1):
+    for j in range(n-i):
             print(" ", end="")
 
-    for j in range(i,0,-1):
-        print(j,end="")
+    for j in range(i):
+        print(i-j,end="")
     print()
     space-=2
     # for j in range(1,)
