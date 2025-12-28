@@ -47,3 +47,10 @@ arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
 
 #1Access elements of Matrix Data Structure:
 '''Like one-dimensional arrays, matrices can be accessed randomly by using their indices to access the individual elements. A cell has two indices, one for its row number, and the other for its column number. We can use arr[i][j] to access the element which is at the ith row and jth column of the matrix.'''
+
+print("First element of first row:",arr[0][0])
+print("Third element of second row:",arr[1][2])
+print("Second element of third row:", arr[2][1])
+
+#Traversal of a Matrix Data Structure:
+# We can traverse all the elements of a matrix or two-dimensional array by using two for-loops.
