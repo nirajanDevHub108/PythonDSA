@@ -68,3 +68,27 @@ for row in arr1:
     for x in row:
           print(x,end=" ")
     print()
+'''Searching in a Matrix Data Structure:
+We can search an element in a matrix by traversing all the elements of the matrix.'''
+
+
+def search_in_mat(arr2,x):
+    row,col=len(arr2),len(arr2[0])
+    for i in range(row):
+          for j in range(col):
+               if arr2[i][j]==x:
+                    return True
+    return False     
+     
+x = 12
+arr2 = [
+    [0, 6, 8, 9, 11],
+    [20, 22, 28, 29, 31],
+    [36, 38, 50, 61, 63],
+    [64, 66, 100, 122, 128]
+]
+
+if search_in_mat(arr2,x):
+     print("YES")
+else:
+     print("NO")
