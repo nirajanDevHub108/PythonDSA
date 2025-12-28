@@ -54,3 +54,17 @@ print("Second element of third row:", arr[2][1])
 
 #Traversal of a Matrix Data Structure:
 # We can traverse all the elements of a matrix or two-dimensional array by using two for-loops.
+
+# Initializing a 2-D list with values
+arr1 = [
+    [1, 2, 3, 4],
+    [5, 6, 7, 8],
+    [9, 10, 11, 12]
+]
+
+#traversing row
+for row in arr1:
+     # Traversing each element in the current row
+    for x in row:
+          print(x,end=" ")
+    print()
