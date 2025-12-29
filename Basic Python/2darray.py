@@ -114,3 +114,14 @@ for row in mat:
     print(', '.join(map(str, row)), end='')
     print(']')
 print(']')
+
+
+#sorting 2d mat by colum wise
+
+a = [2, 3, 6, 7, 9]
+b = [1, 4, 8, 10] 
+k = 5
+
+res=(a+b)
+res.sort()
+print(res[k-1])
