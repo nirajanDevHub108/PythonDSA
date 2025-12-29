@@ -252,6 +252,20 @@ for i in range(1,n+1):
     for j in range(1,i+1):
         print(j,end="")
     print()
+
+#pattern15
+'''
+ABCDE
+ABCD
+ABC
+AB
+A
+'''
+for i in range(n):
+    for ch in range(ord('A'),ord('A')+n-i):
+        print(chr(ch),end="")
+    print()
+
 # 1
 # 3 5
 # 7 9 11
