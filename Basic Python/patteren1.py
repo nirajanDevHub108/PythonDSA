@@ -231,7 +231,27 @@ for i in range(1,n+1):
     print()
 #pattern 14
 '''
+A
+AB
+ABC
+ABCD
+ABCDE
+
 '''
+for i in range(65,n+65):
+    for j in range(65,i+1):
+        print(chr(j),end="")
+    print()
+#method 2
+for i in range(n):
+    for ch in range(ord('A'),ord('A')+i+1):
+        print(chr(ch),end=" ")
+    print()
+
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(j,end="")
+    print()
 # 1
 # 3 5
 # 7 9 11
