@@ -266,6 +266,22 @@ for i in range(n):
         print(chr(ch),end="")
     print()
 
+#pattern 16
+'''
+A
+BB
+CCC
+DDDD
+EEEEE
+'''
+
+for i in range(n):
+    ch=chr(ord('A')+i)
+    for j in range(i+1):
+        print(ch,end="")
+    print()
+
+
 # 1
 # 3 5
 # 7 9 11
