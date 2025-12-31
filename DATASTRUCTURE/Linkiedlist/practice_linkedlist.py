@@ -82,11 +82,34 @@ def  removeK(head,k):
         temp=temp.next
     return head
 
+def deleteNodeWithValueX(head, X):
+        """
+        :type head: Optional[ListNode]
+        :type x: int
+        :rtype: Optional[ListNode]
+        """
+        if head is None:
+            return head
+
+        if head.data == X:
+            head = head.next
+            return head
+
+        prev = None
+        temp = head
+
+        while temp is not None:
+            if temp.data == X:
+                prev.next = temp.next
+                return head
+            prev = temp
+            temp = temp.next
+        return head
 
 
 arr = [1, 2, 3, 4,5,6,7,8]
 k=3
-
+X=5
 head = arr_to_linklist(arr)
 print_list(head)
 len=length_of_ll(head)
@@ -101,5 +124,9 @@ print("List after deleting head: ", end="")
 print_list(head)
 
 head=removeK(head,k)
-print("List after deleting k value: ", end="")
+print("List after deleting kth value: ", end="")
+print_list(head)
+
+head=removeK(head,X)
+print("List after deleting k elemnt: ", end="")
 print_list(head)
