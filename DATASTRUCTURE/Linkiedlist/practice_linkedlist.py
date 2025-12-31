@@ -39,6 +39,15 @@ def deltll(head):
     head=head.next
     del temp
     return head
+def delt_tail_ll(head):
+    if head is None or head.next is None:
+        return None
+    temp=head
+    while(temp.next.next != None):
+        temp=temp.next
+    temp.next=None
+    del temp
+    return head
 
 def print_list(head):
     while head:
@@ -53,7 +62,31 @@ def length_of_ll(head):
         count+=1
 
     return count
-arr = [1, 2, 3, 4]
+def  removeK(head,k):
+    if head is None : return head
+    if k == 1:
+        temp=head
+        head=head.next
+        del temp
+        return head
+    #for k elemnt we will count the ref to check with k
+    count=0
+    temp=head
+    prev = None
+    while temp is not None:
+        count+=1
+        if(count == k):
+            prev.next=prev.next.next
+            break
+        prev=temp
+        temp=temp.next
+    return head
+
+
+
+arr = [1, 2, 3, 4,5,6,7,8]
+k=3
+
 head = arr_to_linklist(arr)
 print_list(head)
 len=length_of_ll(head)
@@ -61,4 +94,12 @@ print("length of ll :",len)
 
 head=deltll(head)
 print("List after deleting head: ", end="")
+print_list(head)
+
+head=delt_tail_ll(head)
+print("List after deleting head: ", end="")
+print_list(head)
+
+head=removeK(head,k)
+print("List after deleting k value: ", end="")
 print_list(head)
