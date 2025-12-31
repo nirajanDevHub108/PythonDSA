@@ -32,6 +32,14 @@ def arr_to_linklist(arr):
         current=current.next
     return head
 
+def deltll(head):
+    if head is None:
+        return None
+    temp=head
+    head=head.next
+    del temp
+    return head
+
 def print_list(head):
     while head:
         print(head.data, end=" -> ")
@@ -51,3 +59,6 @@ print_list(head)
 len=length_of_ll(head)
 print("length of ll :",len)
 
+head=deltll(head)
+print("List after deleting head: ", end="")
+print_list(head)
