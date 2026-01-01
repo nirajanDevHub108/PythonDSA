@@ -42,3 +42,30 @@ if __name__ == '__main__':
     k = 3
 
     print(fractionalNode(head, k))
+'''
+single traversal
+res = None
+    n = 0
+    curr = head
+
+    # Single traversal
+    while curr is not None:
+        n += 1
+
+        # Every time the node number is divisible by k,
+        # move res by one
+        if n % k == 0:
+            if res is None:
+                res = head
+            else:
+                res = res.next
+
+        curr = curr.next
+
+    # If n % k is not zero, then we need to take 
+    # ceil value of n / k 
+    if n % k != 0: 
+        res = res.next
+    
+    return res.data
+'''
