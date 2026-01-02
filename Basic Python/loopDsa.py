@@ -66,5 +66,14 @@ print(freq)
 
 #loop +sliding window technique
 
+def isSorted(arr) -> bool:
+        # code here
+        res=arr[0]
+        
+        for i in range(len(arr)):
+            if arr[i-1] > arr[i]:
+                return False
+        return True
 
-
+arr= [90, 80, 100, 70, 40, 30]
+print(isSorted(arr))
