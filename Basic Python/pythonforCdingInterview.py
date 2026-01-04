@@ -102,3 +102,54 @@ print(arr)
 
 arr.insert(1,7) #inserting at particular index
 print(arr)
+
+arr[0]=0
+arr[3]=0
+print(arr)
+
+#initialize arr of size n with default value 1
+n = 5
+arr = [1] * n
+print(arr)
+print(len(arr))
+
+#last index is fetched by -1
+print(arr[-1])
+
+#so on by -2 by second last
+print(arr[-2])
+
+#sublist aka slicing
+arr=[1, 2, 3, 4]
+print(arr[1 : 3]) #forn index 1 included and 3 excluded
+
+#similar to for loop range, last index is non-inclusive
+print(arr[0:4])
+
+#unpacking
+a, b, c = [1, 2, 3]
+print(a , b, c)
+
+# be carefull when you unpack try to match exact with the left hand side variable with right hand side value
+a, b = [1, 2]
+print(a , b) #thorw error:ValueError: too many values to unpack (expected 2, got 3)
+
+#loop through arr
+nums = [1, 2, 3]
+#using index
+for i in range(len(nums)):
+    print(nums[i])
+
+for n in nums: #using value without index
+    print(n)
+
+#with index and value
+for i , n in enumerate(nums):
+    print(i,n)
+print("-------------------------")
+#looping through multiple array simultaneously with unpacking
+nums1=[1, 3, 5]
+nums2=[2, 4, 6]
+
+for n1, n2 in zip(nums1,nums2):
+    print(n1 , n2)
