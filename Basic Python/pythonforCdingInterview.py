@@ -298,4 +298,62 @@ for val in myMap.values():
 for key,val in myMap.items():
     print(key,val)
 
-#
+#Tuples are array but immutable
+
+tup = (1,2,3)
+print(tup)
+
+#can be used as a key to hashmap/set
+myMap ={ (1,2):3,(4,5):6}
+print(myMap)
+
+
+#Heaps
+import heapq
+
+minHeap=[]
+heapq.heappush(minHeap, 3)
+heapq.heappush(minHeap, 2)
+heapq.heappush(minHeap, 4)
+
+#min is always as index 0
+print(minHeap[0])
+
+while len(minHeap):
+    print(heapq.heappop(minHeap))
+
+#No max heap by default ,work around  is
+# to use min heap and multiply it by -1 when push or pop
+
+maxHeap=[]
+heapq.heappush(maxHeap,-3)
+heapq.heappush(maxHeap,-2)
+heapq.heappush(maxHeap,-4)
+
+#max is alwyas at index 0
+print(-1 * maxHeap[0])
+
+while len(maxHeap):
+    print(-1 * heapq.heappop(maxHeap))
+
+#Build heap from initial values of list
+arr=[2, 1, 3, 4, 8, 5]
+heapq.heapify(arr)
+while arr:
+    print(heapq.heappop(arr))
+
+print('______________________________')
+#functions
+def myFunc(n, m):
+    return n*m
+
+print(myFunc(3,4))
+
+#Nested function have access to other variable
+
+def outer(a,b):
+    c = "c"
+    def inner():
+        return a + b + c
+    return inner()
+print(outer("a","b"))
