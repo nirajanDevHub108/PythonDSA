@@ -211,3 +211,38 @@ print(str(123) + str(123))
 
 print(ord('a'))
 print(ord('A'))
+
+#combine list of string with an empty string delimitor
+strings = ["ab", "cd", "ef"]
+print("".join(strings))
+
+#Queue in python is double ended queue
+from collections import deque #import form collections
+
+queue = deque() 
+queue.append(1)#adding to the queue
+queue.append(2)
+print(queue)
+
+queue.popleft() #best thing is we can remove from the left side
+print(queue)
+
+#also append on left side
+queue.appendleft(1)
+print(queue)
+
+#removing form the queueu
+queue.pop()
+print(queue)
+
+#adding to the queright
+queue.append(2)
+print(queue)
+
+#HAsh set  add and search in O(1) time without duplicates
+
+mySet= set()
+mySet.add(1)
+mySet.add(2)
+mySet.add(3)
+print(mySet)
