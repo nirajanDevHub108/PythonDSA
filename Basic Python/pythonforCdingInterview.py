@@ -246,3 +246,56 @@ mySet.add(1)
 mySet.add(2)
 mySet.add(3)
 print(mySet)
+
+print(len(mySet)) #len of set
+
+print (1 in mySet) # true
+print (4 in mySet) #false
+
+mySet.remove(2) #remove
+print(mySet)
+
+#list to set
+print( set([1,2,3]))
+
+#set comprehension
+
+mySet = {i for i in range(5)}
+print(mySet)
+
+
+#Hash MAP aka dict
+
+myMap = {}
+myMap["alice"] = 66
+myMap["bob"] = 69
+print(myMap)
+print(len(myMap)) #len of hash map
+
+myMap['alice'] = 80 #chnage the value of key
+print(myMap["alice"])
+
+# check if the key is present in map
+print("alice" in myMap)
+myMap.pop("alice")
+print(myMap)
+
+myMap= {"jane" : 70, "max" : 89}
+print(myMap)
+
+#dict comprehension
+myMap = {i:2 * i for i in range(5)}
+print(myMap)
+
+#looping through map
+for key in myMap:
+    print(key,myMap[key])
+
+#second method for only looping through map values
+for val in myMap.values():
+    print(val)
+
+for key,val in myMap.items():
+    print(key,val)
+
+#
