@@ -153,3 +153,25 @@ nums2=[2, 4, 6]
 
 for n1, n2 in zip(nums1,nums2):
     print(n1 , n2)
+
+#revrse using reverse method
+nums.reverse()
+print(nums)
+
+#sorting using sort method
+nums=[2, 3, 4, 1, 5]
+nums.sort()
+print(nums)
+
+#if you want to print(in decending order) use reverse = True
+nums.sort(reverse = True)
+print(nums)
+
+#sorting list of string 
+arr =["bob", "alice" , "jane" , "doe"]
+arr.sort()
+print(arr) #by default in alpabetical order
+
+#if we want to do in custome maner then
+arr.sort(key= lambda x: len(x))
+print(arr)
