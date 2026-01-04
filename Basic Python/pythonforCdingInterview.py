@@ -79,3 +79,26 @@ print(math.floor(3 / 2)) #greater value 1 down
 print(math.ceil(3 / 2)) #smaller value 2 up
 print(math.sqrt(64))
 print(math.pow(2,3))
+
+#Max / Min Int
+float("inf") #Max
+float("-inf")#Min
+
+print(math.pow(2,200))
+
+print(math.pow(2,200) < float("inf"))
+
+#Array in Python is list 
+arr =[1, 2, 3]
+print(arr)
+
+#dynamic array used as stack
+arr.append(4) # add and elemnt in arr
+arr.append(5)
+print(arr)
+
+arr.pop()#remove the element
+print(arr)
+
+arr.insert(1,7) #inserting at particular index
+print(arr)
