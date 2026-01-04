@@ -357,3 +357,34 @@ def outer(a,b):
         return a + b + c
     return inner()
 print(outer("a","b"))
+
+#can modify object but not reassign unless using nonlocal keyword
+
+def double(arr, val):
+    def helper():
+        #modifying array works
+        for i, n in enumerate(arr):
+            arr[i] *= 2
+        
+        #it will pnly modify the value in helper scope
+        # ie val *=2
+
+        nonlocal  val
+        val *= 2
+    helper()
+    print(arr, val)
+nums= [1,2]
+val =3
+double(nums,val)
+
+#class
+class myClass:
+    def __init__(self,nums):
+        self.nums= nums
+        self.size= len(nums)
+    
+    def getLength(self):
+        return self.size
+    
+    def getDoublelength(self):
+        return 2 * self.getLength()
