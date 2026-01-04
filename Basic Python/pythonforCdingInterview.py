@@ -61,3 +61,21 @@ print(5 // 2) # double slash round down the decimal part
 print( -3 // 2)#most langauge round towards 0 by default so neg numbers will round down
 
 print(int(-3 / 2)) #workaround for rounding towards zero is to use decimal division and then convert to int
+
+
+print('_________________')
+
+#% modulo is similar
+print(10 % 3)
+
+#except for neg values
+print(-10 % 3)
+
+import math
+print(math.fmod(-10,3))
+
+#more math helper methods
+print(math.floor(3 / 2)) #greater value 1 down
+print(math.ceil(3 / 2)) #smaller value 2 up
+print(math.sqrt(64))
+print(math.pow(2,3))
