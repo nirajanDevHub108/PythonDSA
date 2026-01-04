@@ -175,3 +175,39 @@ print(arr) #by default in alpabetical order
 #if we want to do in custome maner then
 arr.sort(key= lambda x: len(x))
 print(arr)
+
+#List comprehension
+
+arr = [i  for i in range(5)]
+print(arr)
+
+#for double the i value
+arr = [i+i  for i in range(5)]
+print(arr)
+
+#2d -list
+arr =[[0] * 4 for i in range(4)]
+arr=[[0]*4]*4 #will have to update all the values
+print(arr)
+
+#string are similar to arr
+s= "abc"
+print(s[0:2])
+
+#but they are immutable - we cant modify the value at particular index
+#so we can create a new string
+
+s += "def"
+print(s)
+
+#valid numeric string conversion
+print(int("123") + int("123"))
+
+#and numbers can be converted to string
+
+print(str(123) + str(123))
+
+#incase if we need ASCI value of char we cam do it by using ord
+
+print(ord('a'))
+print(ord('A'))
