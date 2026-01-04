@@ -77,3 +77,4 @@ def isSorted(arr) -> bool:
 
 arr= [90, 80, 100, 70, 40, 30]
 print(isSorted(arr))
+
