@@ -388,3 +388,6 @@ class myClass:
     
     def getDoublelength(self):
         return 2 * self.getLength()
+
+print(math.sqrt(21))
+print(21 // 1)
