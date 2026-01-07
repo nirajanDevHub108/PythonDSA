@@ -20,6 +20,6 @@ def countDistinct(arr,k):
 
     return res
 
-arr = [1, 2, 1, 3, 4, 2, 3]
-k = 4
+arr= [1, 1, 1, 1, 1]
+k = 3
 print(countDistinct(arr,k))
