@@ -1,23 +1,29 @@
+from collections import Counter
 def count_subsets(arr, k):
-    count = 0
+        n = len(arr)
+        mid = n // 2
+    
+        left = arr[:mid]
+        right = arr[mid:]
+    
+        def subset_sums(nums):
+            sums = [0]
+            for x in nums:
+                sums += [s + x for s in sums]
+            return sums
+    
+        left_sums = subset_sums(left)
+        right_sums = subset_sums(right)
+        
+        right_counter= Counter(right_sums)
+    
+        count = 0
+        for s in left_sums:
+            
+            count += right_counter[k-s]
+    
+        return count
 
-    def backtrack(index, curr_sum):
-        nonlocal count
-
-        # If we've processed all elements
-        if index == len(arr):
-            if curr_sum == k:
-                count += 1
-            return
-
-        # Include current element
-        backtrack(index + 1, curr_sum + arr[index])
-
-        # Exclude current element
-        backtrack(index + 1, curr_sum)
-
-    backtrack(0, 0)
-    return count
 
 
 arr = [1, 2, 3]
