@@ -20,3 +20,33 @@ def mostFrequentElement(nums):
         return max_element
 nums=[1, 2, 2, 3, 3, 3]
 print(mostFrequentElement(nums))
+
+'''
+java code:
+class Solution {
+  public int mostFrequentElement(int[] nums) {
+    int n = nums.length;
+    int maxfreq = 0;
+    int maxElement = 0;
+
+    Map<Integer, Integer> mp = new HashMap<>();
+
+    for (int i = 0; i < n; i++) {
+      mp.put(nums[i], mp.getOrDefault(nums[i], 0) + 1);
+    }
+    for (Map.Entry<Integer, Integer> it : mp.entrySet()) {
+      int ele = it.getKey();
+      int freq = it.getValue();
+      if (freq > maxfreq) {
+        maxfreq = freq;
+        maxElement = ele;
+      } else if (freq == maxfreq) {
+        maxElement = Math.min(maxElement, ele);
+      }
+      
+    }
+    return maxElement;
+  }
+}
+
+'''
