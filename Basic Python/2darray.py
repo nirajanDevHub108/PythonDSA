@@ -1,4 +1,4 @@
-mat = [[1,2,3],[4,5,6]]
+mat = [[1,2,3],[4,5,6]]c
 # Print all elements
 
 # for i in range(len(mat)):
